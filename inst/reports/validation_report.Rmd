@@ -1,0 +1,109 @@
+---
+params:
+  author: unknown
+  title: Validation
+  x: NULL
+  result: NULL
+title: "`r params$title`"
+author: "`r params$author`"
+date: "`r Sys.Date()`"
+output:
+  html_document: 
+    number_sections: true
+    toc_depth: 3
+    toc: true
+    toc_float: true
+    keep_md: true
+  pdf_document: 
+    number_sections: true
+    toc_depth: 3
+    toc: true
+  word_document: 
+    toc_depth: 3
+    toc: true
+---
+
+
+```{r setup, include=FALSE}
+library(magrittr)
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+x <- params$x
+result <- params$result
+
+## only for debugging ##
+if (is.null(x)) {
+  if (!require("dmdScheme")) {
+    devtools::load_all()
+  }
+  x <- dmdScheme::dmdScheme_raw()
+  result <- validate(x = dmdScheme_raw(), validateData = TRUE, report = "none", path = system.file("example_data", "basic", "data", "archiving_data", package = "dmdScheme"))
+}
+## ##
+## Define colours for results of evaluation
+
+```
+
+* **Author**: `r params$author`
+* **dmdScheme metadata name**: `r attr(x, "fileName")`
+* **data package path**: `add this` 
+
+# Introduction
+This validation report validates the most likely an excelsheet containing the data.
+The headers do represent sections of validations, while the bullets reperesent individual validations. Sections of the validation and are hierarchical, i.e. a higher level validation result depends on the lower level validation results. The headers and validations follow the structure of
+
+**Error_Level** : **Name of the validation**
+
+The error level can be:
+- **OK**: the validation passed
+- **note**: the validation contains an inconsistency which migh be an error or on purpose. Please check these!
+- **warning**: the validation contains an inconsistency which could be an error or on purpose. Please check these!
+- **error**: the validation failed and contains an error - needs to be fixewd before the data can be exported!
+
+An ideal validation will not contain any errors or warnings.
+
+Validation results are accumulated by forwarding the highest error to the validation of the next 
+level. If validation 1.3. contains an error, 1. will be classified as an error as well, 
+irrespective of 1.1, 1.2, ....
+
+The details do contain the individual tests and are explained in detail in the sections
+
+Details **Error_Level** : **Name of the validation**
+
+
+# Details
+
+```{r}
+valErr_extract(result) %>% 
+  table %>% 
+  set_names(valErr_info(names(.))$text)
+```
+
+## Errors
+```{r, results = "asis"}
+print(result, level = 2, listLevel = 20, type = "details", error = 3)
+```
+
+## Warnings
+```{r, results = "asis"}
+print(result, level = 2, listLevel = 20, type = "details", error = 2)
+```
+
+## Notes
+```{r, results = "asis"}
+print(result, level = 2, listLevel = 20, type = "details", error = 1)
+```
+
+## OK
+```{r, results = "asis"}
+print(result, level = 2, listLevel = 20, type = "details", error = 0)
+```
+
+# Structure info
+```{r info}
+attributes(x)
+```
+
+# <span style="color:red">TODO</span>  
+- Use conditional text to explicitly say pass or fail, so that users don't have to read the R output (or at least get lovely green text for pass, and red for fail!)
+- Validation out of attempt to parse date variables
