@@ -12,7 +12,7 @@
 
 <meta name="author" content="Rainer M Krug Rainer.Krug@uzh.ch" />
 
-<meta name="date" content="2020-03-18" />
+<meta name="date" content="2020-04-30" />
 
 <title>R Package Introduction</title>
 
@@ -316,7 +316,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <h1 class="title toc-ignore">R Package Introduction</h1>
 <h3 class="subtitle">dmdScheme_0.9.5</h3>
 <h4 class="author">Rainer M Krug <a href="mailto:Rainer.Krug@uzh.ch" class="email">Rainer.Krug@uzh.ch</a></h4>
-<h4 class="date">2020-03-18</h4>
+<h4 class="date">2020-04-30</h4>
 
 
 
@@ -386,7 +386,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <h3><code>scheme_install()</code></h3>
 <p>Install a new scheme definition. In the normal usecase, this function uses <code>scheme_download_url()</code> to download the scheme defintion from the default <a href="https://github.com/Exp-Micro-Ecol-Hub/dmdSchemeRepository">github repository</a> and installs it. The usage is</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">scheme_install</span>(<span class="dt">name =</span> <span class="st">&quot;emeScheme&quot;</span>, <span class="dt">version =</span> <span class="st">&quot;0.9.5&quot;</span>)</span>
-<span id="cb7-2"><a href="#cb7-2"></a><span class="co">#&gt; Scheme definition `/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpnB5tbC/file1ee77b69ef9c/emeScheme_0.9.5.tar.gz, installed with</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="co">#&gt; Scheme definition `/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//Rtmp2pTKaj/file413871de42/emeScheme_0.9.5.tar.gz, installed with</span></span>
 <span id="cb7-3"><a href="#cb7-3"></a><span class="co">#&gt; name:    emeScheme</span></span>
 <span id="cb7-4"><a href="#cb7-4"></a><span class="co">#&gt; version: 0.9.5</span></span></code></pre></div>
 </div>
@@ -421,7 +421,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <p>Uninstall an installed scheme. The scheme definition, is deleted from the scheme library, and moved to a temporary flder which wil be deleted at the end of the R session.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">scheme_uninstall</span>(<span class="dt">name =</span> <span class="st">&quot;emeScheme&quot;</span>, <span class="dt">version =</span> <span class="st">&quot;0.9.5&quot;</span>)</span>
 <span id="cb11-2"><a href="#cb11-2"></a><span class="co">#&gt; Scheme emeScheme_0.9.5 deleted and moved to</span></span>
-<span id="cb11-3"><a href="#cb11-3"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpnB5tbC/file1ee774b067ff&quot;</span></span></code></pre></div>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//Rtmp2pTKaj/file41383292b5d1&quot;</span></span></code></pre></div>
 </div>
 <div id="scheme_installed-returntrue-if-the-scheme-is-installed" class="section level3">
 <h3><code>scheme_installed() Return</code>TRUE, if the scheme is installed</h3>
@@ -432,13 +432,13 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <h3><code>scheme_path_xlsx()</code></h3>
 <p>Returns the path to the <code>.xlsx</code> representation of the currently active scheme.</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="kw">scheme_path_xlsx</span>()</span>
-<span id="cb13-2"><a href="#cb13-2"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpnB5tbC/dmdScheme_1ee71ed36c60/installedSchemes/dmdScheme_0.9.5/dmdScheme_0.9.5.xlsx&quot;</span></span></code></pre></div>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//Rtmp2pTKaj/dmdScheme_413841640b15/installedSchemes/dmdScheme_0.9.5/dmdScheme_0.9.5.xlsx&quot;</span></span></code></pre></div>
 </div>
 <div id="scheme_path_xml" class="section level3">
 <h3><code>scheme_path_xml()</code></h3>
 <p>Returns the path to the <code>.xml</code> representation of the currently active scheme.</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="kw">scheme_path_xml</span>()</span>
-<span id="cb14-2"><a href="#cb14-2"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpnB5tbC/dmdScheme_1ee71ed36c60/installedSchemes/dmdScheme_0.9.5/dmdScheme_0.9.5.xml&quot;</span></span></code></pre></div>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//Rtmp2pTKaj/dmdScheme_413841640b15/installedSchemes/dmdScheme_0.9.5/dmdScheme_0.9.5.xml&quot;</span></span></code></pre></div>
 </div>
 <div id="scheme_make" class="section level3">
 <h3><code>scheme_make()</code></h3>
@@ -983,17 +983,17 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-97"><a href="#cb21-97"></a><span class="co">#&gt; </span></span>
 <span id="cb21-98"><a href="#cb21-98"></a><span class="co">#&gt; $Genus</span></span>
 <span id="cb21-99"><a href="#cb21-99"></a><span class="co">#&gt; $error</span></span>
-<span id="cb21-100"><a href="#cb21-100"></a><span class="co">#&gt; [1] 3</span></span>
+<span id="cb21-100"><a href="#cb21-100"></a><span class="co">#&gt; [1] 1</span></span>
 <span id="cb21-101"><a href="#cb21-101"></a><span class="co">#&gt; </span></span>
 <span id="cb21-102"><a href="#cb21-102"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-103"><a href="#cb21-103"></a><span class="co">#&gt;            Module errorCode  isOK</span></span>
 <span id="cb21-104"><a href="#cb21-104"></a><span class="co">#&gt; 1           types        OK  TRUE</span></span>
 <span id="cb21-105"><a href="#cb21-105"></a><span class="co">#&gt; 2 suggestedValues      note FALSE</span></span>
-<span id="cb21-106"><a href="#cb21-106"></a><span class="co">#&gt; 3   allowedValues     error FALSE</span></span>
+<span id="cb21-106"><a href="#cb21-106"></a><span class="co">#&gt; 3   allowedValues        OK  TRUE</span></span>
 <span id="cb21-107"><a href="#cb21-107"></a><span class="co">#&gt; 4         IDField        OK  TRUE</span></span>
 <span id="cb21-108"><a href="#cb21-108"></a><span class="co">#&gt; </span></span>
 <span id="cb21-109"><a href="#cb21-109"></a><span class="co">#&gt; $header</span></span>
-<span id="cb21-110"><a href="#cb21-110"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#FF0000\&quot;&gt;Genus - error&lt;/span&gt;**&quot;</span></span>
+<span id="cb21-110"><a href="#cb21-110"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#55AA00\&quot;&gt;Genus - note&lt;/span&gt;**&quot;</span></span>
 <span id="cb21-111"><a href="#cb21-111"></a><span class="co">#&gt; </span></span>
 <span id="cb21-112"><a href="#cb21-112"></a><span class="co">#&gt; $description</span></span>
 <span id="cb21-113"><a href="#cb21-113"></a><span class="co">#&gt; [1] &quot;Test if the metadata concerning ** Genus ** is correct.  This includes column names, required info, ... &quot;</span></span>
@@ -1034,8 +1034,8 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-148"><a href="#cb21-148"></a><span class="co">#&gt; </span></span>
 <span id="cb21-149"><a href="#cb21-149"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-150"><a href="#cb21-150"></a><span class="co">#&gt;   speciesID colour density functionalGroup comment</span></span>
-<span id="cb21-151"><a href="#cb21-151"></a><span class="co">#&gt; 1     FALSE  FALSE   FALSE            TRUE   FALSE</span></span>
-<span id="cb21-152"><a href="#cb21-152"></a><span class="co">#&gt; 2     FALSE  FALSE    TRUE           FALSE    TRUE</span></span>
+<span id="cb21-151"><a href="#cb21-151"></a><span class="co">#&gt; 1      &lt;NA&gt;   &lt;NA&gt;   FALSE            TRUE    &lt;NA&gt;</span></span>
+<span id="cb21-152"><a href="#cb21-152"></a><span class="co">#&gt; 2      &lt;NA&gt;   &lt;NA&gt;    TRUE           FALSE    &lt;NA&gt;</span></span>
 <span id="cb21-153"><a href="#cb21-153"></a><span class="co">#&gt; </span></span>
 <span id="cb21-154"><a href="#cb21-154"></a><span class="co">#&gt; $header</span></span>
 <span id="cb21-155"><a href="#cb21-155"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#55AA00\&quot;&gt;values in suggestedValues - note&lt;/span&gt;**&quot;</span></span>
@@ -1054,15 +1054,15 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-168"><a href="#cb21-168"></a><span class="co">#&gt; </span></span>
 <span id="cb21-169"><a href="#cb21-169"></a><span class="co">#&gt; $allowedValues</span></span>
 <span id="cb21-170"><a href="#cb21-170"></a><span class="co">#&gt; $error</span></span>
-<span id="cb21-171"><a href="#cb21-171"></a><span class="co">#&gt; [1] 3</span></span>
+<span id="cb21-171"><a href="#cb21-171"></a><span class="co">#&gt; [1] 0</span></span>
 <span id="cb21-172"><a href="#cb21-172"></a><span class="co">#&gt; </span></span>
 <span id="cb21-173"><a href="#cb21-173"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-174"><a href="#cb21-174"></a><span class="co">#&gt;   speciesID colour density functionalGroup comment</span></span>
-<span id="cb21-175"><a href="#cb21-175"></a><span class="co">#&gt; 1     FALSE  FALSE   FALSE           FALSE   FALSE</span></span>
-<span id="cb21-176"><a href="#cb21-176"></a><span class="co">#&gt; 2     FALSE  FALSE    TRUE           FALSE    TRUE</span></span>
+<span id="cb21-175"><a href="#cb21-175"></a><span class="co">#&gt; 1      &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;            &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-176"><a href="#cb21-176"></a><span class="co">#&gt; 2      &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;            &lt;NA&gt;    &lt;NA&gt;</span></span>
 <span id="cb21-177"><a href="#cb21-177"></a><span class="co">#&gt; </span></span>
 <span id="cb21-178"><a href="#cb21-178"></a><span class="co">#&gt; $header</span></span>
-<span id="cb21-179"><a href="#cb21-179"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#FF0000\&quot;&gt;values in allowedValues - error&lt;/span&gt;**&quot;</span></span>
+<span id="cb21-179"><a href="#cb21-179"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#00FF00\&quot;&gt;values in allowedValues - OK&lt;/span&gt;**&quot;</span></span>
 <span id="cb21-180"><a href="#cb21-180"></a><span class="co">#&gt; </span></span>
 <span id="cb21-181"><a href="#cb21-181"></a><span class="co">#&gt; $description</span></span>
 <span id="cb21-182"><a href="#cb21-182"></a><span class="co">#&gt; [1] &quot;Test if the metadata entered is ion the allowedValues list. The value NA is allowed in all column types, empty cells should be avoided.&quot;</span></span>
@@ -1104,17 +1104,17 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-218"><a href="#cb21-218"></a><span class="co">#&gt; </span></span>
 <span id="cb21-219"><a href="#cb21-219"></a><span class="co">#&gt; $Treatments</span></span>
 <span id="cb21-220"><a href="#cb21-220"></a><span class="co">#&gt; $error</span></span>
-<span id="cb21-221"><a href="#cb21-221"></a><span class="co">#&gt; [1] 3</span></span>
+<span id="cb21-221"><a href="#cb21-221"></a><span class="co">#&gt; [1] 1</span></span>
 <span id="cb21-222"><a href="#cb21-222"></a><span class="co">#&gt; </span></span>
 <span id="cb21-223"><a href="#cb21-223"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-224"><a href="#cb21-224"></a><span class="co">#&gt;            Module errorCode  isOK</span></span>
 <span id="cb21-225"><a href="#cb21-225"></a><span class="co">#&gt; 1           types        OK  TRUE</span></span>
 <span id="cb21-226"><a href="#cb21-226"></a><span class="co">#&gt; 2 suggestedValues      note FALSE</span></span>
-<span id="cb21-227"><a href="#cb21-227"></a><span class="co">#&gt; 3   allowedValues     error FALSE</span></span>
+<span id="cb21-227"><a href="#cb21-227"></a><span class="co">#&gt; 3   allowedValues        OK  TRUE</span></span>
 <span id="cb21-228"><a href="#cb21-228"></a><span class="co">#&gt; 4         IDField        OK  TRUE</span></span>
 <span id="cb21-229"><a href="#cb21-229"></a><span class="co">#&gt; </span></span>
 <span id="cb21-230"><a href="#cb21-230"></a><span class="co">#&gt; $header</span></span>
-<span id="cb21-231"><a href="#cb21-231"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#FF0000\&quot;&gt;Treatments - error&lt;/span&gt;**&quot;</span></span>
+<span id="cb21-231"><a href="#cb21-231"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#55AA00\&quot;&gt;Treatments - note&lt;/span&gt;**&quot;</span></span>
 <span id="cb21-232"><a href="#cb21-232"></a><span class="co">#&gt; </span></span>
 <span id="cb21-233"><a href="#cb21-233"></a><span class="co">#&gt; $description</span></span>
 <span id="cb21-234"><a href="#cb21-234"></a><span class="co">#&gt; [1] &quot;Test if the metadata concerning ** Treatments ** is correct.  This includes column names, required info, ... &quot;</span></span>
@@ -1158,11 +1158,11 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-272"><a href="#cb21-272"></a><span class="co">#&gt; </span></span>
 <span id="cb21-273"><a href="#cb21-273"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-274"><a href="#cb21-274"></a><span class="co">#&gt;   treatmentID treatmentLevelHeight comment</span></span>
-<span id="cb21-275"><a href="#cb21-275"></a><span class="co">#&gt; 1       FALSE                FALSE    TRUE</span></span>
-<span id="cb21-276"><a href="#cb21-276"></a><span class="co">#&gt; 2       FALSE                FALSE    TRUE</span></span>
-<span id="cb21-277"><a href="#cb21-277"></a><span class="co">#&gt; 3       FALSE                FALSE    TRUE</span></span>
-<span id="cb21-278"><a href="#cb21-278"></a><span class="co">#&gt; 4       FALSE                FALSE    TRUE</span></span>
-<span id="cb21-279"><a href="#cb21-279"></a><span class="co">#&gt; 5       FALSE                FALSE    TRUE</span></span>
+<span id="cb21-275"><a href="#cb21-275"></a><span class="co">#&gt; 1       FALSE                FALSE    &lt;NA&gt;</span></span>
+<span id="cb21-276"><a href="#cb21-276"></a><span class="co">#&gt; 2       FALSE                FALSE    &lt;NA&gt;</span></span>
+<span id="cb21-277"><a href="#cb21-277"></a><span class="co">#&gt; 3       FALSE                FALSE    &lt;NA&gt;</span></span>
+<span id="cb21-278"><a href="#cb21-278"></a><span class="co">#&gt; 4       FALSE                FALSE    &lt;NA&gt;</span></span>
+<span id="cb21-279"><a href="#cb21-279"></a><span class="co">#&gt; 5       FALSE                FALSE    &lt;NA&gt;</span></span>
 <span id="cb21-280"><a href="#cb21-280"></a><span class="co">#&gt; </span></span>
 <span id="cb21-281"><a href="#cb21-281"></a><span class="co">#&gt; $header</span></span>
 <span id="cb21-282"><a href="#cb21-282"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#55AA00\&quot;&gt;values in suggestedValues - note&lt;/span&gt;**&quot;</span></span>
@@ -1181,18 +1181,18 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-295"><a href="#cb21-295"></a><span class="co">#&gt; </span></span>
 <span id="cb21-296"><a href="#cb21-296"></a><span class="co">#&gt; $allowedValues</span></span>
 <span id="cb21-297"><a href="#cb21-297"></a><span class="co">#&gt; $error</span></span>
-<span id="cb21-298"><a href="#cb21-298"></a><span class="co">#&gt; [1] 3</span></span>
+<span id="cb21-298"><a href="#cb21-298"></a><span class="co">#&gt; [1] 0</span></span>
 <span id="cb21-299"><a href="#cb21-299"></a><span class="co">#&gt; </span></span>
 <span id="cb21-300"><a href="#cb21-300"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-301"><a href="#cb21-301"></a><span class="co">#&gt;   treatmentID treatmentLevelHeight comment</span></span>
-<span id="cb21-302"><a href="#cb21-302"></a><span class="co">#&gt; 1       FALSE                FALSE    TRUE</span></span>
-<span id="cb21-303"><a href="#cb21-303"></a><span class="co">#&gt; 2       FALSE                FALSE    TRUE</span></span>
-<span id="cb21-304"><a href="#cb21-304"></a><span class="co">#&gt; 3       FALSE                FALSE    TRUE</span></span>
-<span id="cb21-305"><a href="#cb21-305"></a><span class="co">#&gt; 4       FALSE                FALSE    TRUE</span></span>
-<span id="cb21-306"><a href="#cb21-306"></a><span class="co">#&gt; 5       FALSE                FALSE    TRUE</span></span>
+<span id="cb21-302"><a href="#cb21-302"></a><span class="co">#&gt; 1        &lt;NA&gt;                 &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-303"><a href="#cb21-303"></a><span class="co">#&gt; 2        &lt;NA&gt;                 &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-304"><a href="#cb21-304"></a><span class="co">#&gt; 3        &lt;NA&gt;                 &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-305"><a href="#cb21-305"></a><span class="co">#&gt; 4        &lt;NA&gt;                 &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-306"><a href="#cb21-306"></a><span class="co">#&gt; 5        &lt;NA&gt;                 &lt;NA&gt;    &lt;NA&gt;</span></span>
 <span id="cb21-307"><a href="#cb21-307"></a><span class="co">#&gt; </span></span>
 <span id="cb21-308"><a href="#cb21-308"></a><span class="co">#&gt; $header</span></span>
-<span id="cb21-309"><a href="#cb21-309"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#FF0000\&quot;&gt;values in allowedValues - error&lt;/span&gt;**&quot;</span></span>
+<span id="cb21-309"><a href="#cb21-309"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#00FF00\&quot;&gt;values in allowedValues - OK&lt;/span&gt;**&quot;</span></span>
 <span id="cb21-310"><a href="#cb21-310"></a><span class="co">#&gt; </span></span>
 <span id="cb21-311"><a href="#cb21-311"></a><span class="co">#&gt; $description</span></span>
 <span id="cb21-312"><a href="#cb21-312"></a><span class="co">#&gt; [1] &quot;Test if the metadata entered is ion the allowedValues list. The value NA is allowed in all column types, empty cells should be avoided.&quot;</span></span>
@@ -1234,17 +1234,17 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-348"><a href="#cb21-348"></a><span class="co">#&gt; </span></span>
 <span id="cb21-349"><a href="#cb21-349"></a><span class="co">#&gt; $Measurement</span></span>
 <span id="cb21-350"><a href="#cb21-350"></a><span class="co">#&gt; $error</span></span>
-<span id="cb21-351"><a href="#cb21-351"></a><span class="co">#&gt; [1] 3</span></span>
+<span id="cb21-351"><a href="#cb21-351"></a><span class="co">#&gt; [1] 1</span></span>
 <span id="cb21-352"><a href="#cb21-352"></a><span class="co">#&gt; </span></span>
 <span id="cb21-353"><a href="#cb21-353"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-354"><a href="#cb21-354"></a><span class="co">#&gt;            Module errorCode  isOK</span></span>
 <span id="cb21-355"><a href="#cb21-355"></a><span class="co">#&gt; 1           types        OK  TRUE</span></span>
 <span id="cb21-356"><a href="#cb21-356"></a><span class="co">#&gt; 2 suggestedValues      note FALSE</span></span>
-<span id="cb21-357"><a href="#cb21-357"></a><span class="co">#&gt; 3   allowedValues     error FALSE</span></span>
+<span id="cb21-357"><a href="#cb21-357"></a><span class="co">#&gt; 3   allowedValues        OK  TRUE</span></span>
 <span id="cb21-358"><a href="#cb21-358"></a><span class="co">#&gt; 4         IDField        OK  TRUE</span></span>
 <span id="cb21-359"><a href="#cb21-359"></a><span class="co">#&gt; </span></span>
 <span id="cb21-360"><a href="#cb21-360"></a><span class="co">#&gt; $header</span></span>
-<span id="cb21-361"><a href="#cb21-361"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#FF0000\&quot;&gt;Measurement - error&lt;/span&gt;**&quot;</span></span>
+<span id="cb21-361"><a href="#cb21-361"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#55AA00\&quot;&gt;Measurement - note&lt;/span&gt;**&quot;</span></span>
 <span id="cb21-362"><a href="#cb21-362"></a><span class="co">#&gt; </span></span>
 <span id="cb21-363"><a href="#cb21-363"></a><span class="co">#&gt; $description</span></span>
 <span id="cb21-364"><a href="#cb21-364"></a><span class="co">#&gt; [1] &quot;Test if the metadata concerning ** Measurement ** is correct.  This includes column names, required info, ... &quot;</span></span>
@@ -1292,15 +1292,15 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-406"><a href="#cb21-406"></a><span class="co">#&gt; </span></span>
 <span id="cb21-407"><a href="#cb21-407"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-408"><a href="#cb21-408"></a><span class="co">#&gt;   measurementID variable method  unit object noOfSamplesInTimeSeries</span></span>
-<span id="cb21-409"><a href="#cb21-409"></a><span class="co">#&gt; 1         FALSE    FALSE   TRUE  TRUE   TRUE                   FALSE</span></span>
-<span id="cb21-410"><a href="#cb21-410"></a><span class="co">#&gt; 2         FALSE     TRUE  FALSE  TRUE   TRUE                   FALSE</span></span>
-<span id="cb21-411"><a href="#cb21-411"></a><span class="co">#&gt; 3         FALSE    FALSE  FALSE FALSE   TRUE                   FALSE</span></span>
-<span id="cb21-412"><a href="#cb21-412"></a><span class="co">#&gt; 4         FALSE     TRUE  FALSE FALSE  FALSE                   FALSE</span></span>
+<span id="cb21-409"><a href="#cb21-409"></a><span class="co">#&gt; 1          &lt;NA&gt;    FALSE   TRUE  TRUE   TRUE                    &lt;NA&gt;</span></span>
+<span id="cb21-410"><a href="#cb21-410"></a><span class="co">#&gt; 2          &lt;NA&gt;     TRUE  FALSE  TRUE   TRUE                    &lt;NA&gt;</span></span>
+<span id="cb21-411"><a href="#cb21-411"></a><span class="co">#&gt; 3          &lt;NA&gt;    FALSE  FALSE FALSE   TRUE                    &lt;NA&gt;</span></span>
+<span id="cb21-412"><a href="#cb21-412"></a><span class="co">#&gt; 4          &lt;NA&gt;     TRUE  FALSE FALSE  FALSE                    &lt;NA&gt;</span></span>
 <span id="cb21-413"><a href="#cb21-413"></a><span class="co">#&gt;   samplingVolume dataExtractionID measuredFrom comment</span></span>
-<span id="cb21-414"><a href="#cb21-414"></a><span class="co">#&gt; 1          FALSE            FALSE        FALSE    TRUE</span></span>
-<span id="cb21-415"><a href="#cb21-415"></a><span class="co">#&gt; 2          FALSE            FALSE        FALSE    TRUE</span></span>
-<span id="cb21-416"><a href="#cb21-416"></a><span class="co">#&gt; 3          FALSE            FALSE        FALSE    TRUE</span></span>
-<span id="cb21-417"><a href="#cb21-417"></a><span class="co">#&gt; 4          FALSE            FALSE        FALSE    TRUE</span></span>
+<span id="cb21-414"><a href="#cb21-414"></a><span class="co">#&gt; 1           &lt;NA&gt;             &lt;NA&gt;         &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-415"><a href="#cb21-415"></a><span class="co">#&gt; 2           &lt;NA&gt;             &lt;NA&gt;         &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-416"><a href="#cb21-416"></a><span class="co">#&gt; 3           &lt;NA&gt;             &lt;NA&gt;         &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-417"><a href="#cb21-417"></a><span class="co">#&gt; 4           &lt;NA&gt;             &lt;NA&gt;         &lt;NA&gt;    &lt;NA&gt;</span></span>
 <span id="cb21-418"><a href="#cb21-418"></a><span class="co">#&gt; </span></span>
 <span id="cb21-419"><a href="#cb21-419"></a><span class="co">#&gt; $header</span></span>
 <span id="cb21-420"><a href="#cb21-420"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#55AA00\&quot;&gt;values in suggestedValues - note&lt;/span&gt;**&quot;</span></span>
@@ -1319,22 +1319,22 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-433"><a href="#cb21-433"></a><span class="co">#&gt; </span></span>
 <span id="cb21-434"><a href="#cb21-434"></a><span class="co">#&gt; $allowedValues</span></span>
 <span id="cb21-435"><a href="#cb21-435"></a><span class="co">#&gt; $error</span></span>
-<span id="cb21-436"><a href="#cb21-436"></a><span class="co">#&gt; [1] 3</span></span>
+<span id="cb21-436"><a href="#cb21-436"></a><span class="co">#&gt; [1] 0</span></span>
 <span id="cb21-437"><a href="#cb21-437"></a><span class="co">#&gt; </span></span>
 <span id="cb21-438"><a href="#cb21-438"></a><span class="co">#&gt; $details</span></span>
-<span id="cb21-439"><a href="#cb21-439"></a><span class="co">#&gt;   measurementID variable method  unit object noOfSamplesInTimeSeries</span></span>
-<span id="cb21-440"><a href="#cb21-440"></a><span class="co">#&gt; 1         FALSE    FALSE  FALSE FALSE  FALSE                   FALSE</span></span>
-<span id="cb21-441"><a href="#cb21-441"></a><span class="co">#&gt; 2         FALSE    FALSE  FALSE FALSE  FALSE                   FALSE</span></span>
-<span id="cb21-442"><a href="#cb21-442"></a><span class="co">#&gt; 3         FALSE    FALSE  FALSE FALSE  FALSE                   FALSE</span></span>
-<span id="cb21-443"><a href="#cb21-443"></a><span class="co">#&gt; 4         FALSE    FALSE  FALSE FALSE  FALSE                   FALSE</span></span>
+<span id="cb21-439"><a href="#cb21-439"></a><span class="co">#&gt;   measurementID variable method unit object noOfSamplesInTimeSeries</span></span>
+<span id="cb21-440"><a href="#cb21-440"></a><span class="co">#&gt; 1          &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;                    &lt;NA&gt;</span></span>
+<span id="cb21-441"><a href="#cb21-441"></a><span class="co">#&gt; 2          &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;                    &lt;NA&gt;</span></span>
+<span id="cb21-442"><a href="#cb21-442"></a><span class="co">#&gt; 3          &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;                    &lt;NA&gt;</span></span>
+<span id="cb21-443"><a href="#cb21-443"></a><span class="co">#&gt; 4          &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;                    &lt;NA&gt;</span></span>
 <span id="cb21-444"><a href="#cb21-444"></a><span class="co">#&gt;   samplingVolume dataExtractionID measuredFrom comment</span></span>
-<span id="cb21-445"><a href="#cb21-445"></a><span class="co">#&gt; 1          FALSE            FALSE        FALSE    TRUE</span></span>
-<span id="cb21-446"><a href="#cb21-446"></a><span class="co">#&gt; 2          FALSE            FALSE        FALSE    TRUE</span></span>
-<span id="cb21-447"><a href="#cb21-447"></a><span class="co">#&gt; 3          FALSE            FALSE        FALSE    TRUE</span></span>
-<span id="cb21-448"><a href="#cb21-448"></a><span class="co">#&gt; 4          FALSE            FALSE        FALSE    TRUE</span></span>
+<span id="cb21-445"><a href="#cb21-445"></a><span class="co">#&gt; 1           &lt;NA&gt;             &lt;NA&gt;         &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-446"><a href="#cb21-446"></a><span class="co">#&gt; 2           &lt;NA&gt;             &lt;NA&gt;         &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-447"><a href="#cb21-447"></a><span class="co">#&gt; 3           &lt;NA&gt;             &lt;NA&gt;         &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-448"><a href="#cb21-448"></a><span class="co">#&gt; 4           &lt;NA&gt;             &lt;NA&gt;         &lt;NA&gt;    &lt;NA&gt;</span></span>
 <span id="cb21-449"><a href="#cb21-449"></a><span class="co">#&gt; </span></span>
 <span id="cb21-450"><a href="#cb21-450"></a><span class="co">#&gt; $header</span></span>
-<span id="cb21-451"><a href="#cb21-451"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#FF0000\&quot;&gt;values in allowedValues - error&lt;/span&gt;**&quot;</span></span>
+<span id="cb21-451"><a href="#cb21-451"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#00FF00\&quot;&gt;values in allowedValues - OK&lt;/span&gt;**&quot;</span></span>
 <span id="cb21-452"><a href="#cb21-452"></a><span class="co">#&gt; </span></span>
 <span id="cb21-453"><a href="#cb21-453"></a><span class="co">#&gt; $description</span></span>
 <span id="cb21-454"><a href="#cb21-454"></a><span class="co">#&gt; [1] &quot;Test if the metadata entered is ion the allowedValues list. The value NA is allowed in all column types, empty cells should be avoided.&quot;</span></span>
@@ -1376,17 +1376,17 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-490"><a href="#cb21-490"></a><span class="co">#&gt; </span></span>
 <span id="cb21-491"><a href="#cb21-491"></a><span class="co">#&gt; $DataExtraction</span></span>
 <span id="cb21-492"><a href="#cb21-492"></a><span class="co">#&gt; $error</span></span>
-<span id="cb21-493"><a href="#cb21-493"></a><span class="co">#&gt; [1] 3</span></span>
+<span id="cb21-493"><a href="#cb21-493"></a><span class="co">#&gt; [1] 0</span></span>
 <span id="cb21-494"><a href="#cb21-494"></a><span class="co">#&gt; </span></span>
 <span id="cb21-495"><a href="#cb21-495"></a><span class="co">#&gt; $details</span></span>
-<span id="cb21-496"><a href="#cb21-496"></a><span class="co">#&gt;            Module errorCode  isOK</span></span>
-<span id="cb21-497"><a href="#cb21-497"></a><span class="co">#&gt; 1           types        OK  TRUE</span></span>
-<span id="cb21-498"><a href="#cb21-498"></a><span class="co">#&gt; 2 suggestedValues      note FALSE</span></span>
-<span id="cb21-499"><a href="#cb21-499"></a><span class="co">#&gt; 3   allowedValues     error FALSE</span></span>
-<span id="cb21-500"><a href="#cb21-500"></a><span class="co">#&gt; 4         IDField        OK  TRUE</span></span>
+<span id="cb21-496"><a href="#cb21-496"></a><span class="co">#&gt;            Module errorCode isOK</span></span>
+<span id="cb21-497"><a href="#cb21-497"></a><span class="co">#&gt; 1           types        OK TRUE</span></span>
+<span id="cb21-498"><a href="#cb21-498"></a><span class="co">#&gt; 2 suggestedValues        OK TRUE</span></span>
+<span id="cb21-499"><a href="#cb21-499"></a><span class="co">#&gt; 3   allowedValues        OK TRUE</span></span>
+<span id="cb21-500"><a href="#cb21-500"></a><span class="co">#&gt; 4         IDField        OK TRUE</span></span>
 <span id="cb21-501"><a href="#cb21-501"></a><span class="co">#&gt; </span></span>
 <span id="cb21-502"><a href="#cb21-502"></a><span class="co">#&gt; $header</span></span>
-<span id="cb21-503"><a href="#cb21-503"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#FF0000\&quot;&gt;DataExtraction - error&lt;/span&gt;**&quot;</span></span>
+<span id="cb21-503"><a href="#cb21-503"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#00FF00\&quot;&gt;DataExtraction - OK&lt;/span&gt;**&quot;</span></span>
 <span id="cb21-504"><a href="#cb21-504"></a><span class="co">#&gt; </span></span>
 <span id="cb21-505"><a href="#cb21-505"></a><span class="co">#&gt; $description</span></span>
 <span id="cb21-506"><a href="#cb21-506"></a><span class="co">#&gt; [1] &quot;Test if the metadata concerning ** DataExtraction ** is correct.  This includes column names, required info, ... &quot;</span></span>
@@ -1422,14 +1422,14 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-536"><a href="#cb21-536"></a><span class="co">#&gt; </span></span>
 <span id="cb21-537"><a href="#cb21-537"></a><span class="co">#&gt; $suggestedValues</span></span>
 <span id="cb21-538"><a href="#cb21-538"></a><span class="co">#&gt; $error</span></span>
-<span id="cb21-539"><a href="#cb21-539"></a><span class="co">#&gt; [1] 1</span></span>
+<span id="cb21-539"><a href="#cb21-539"></a><span class="co">#&gt; [1] 0</span></span>
 <span id="cb21-540"><a href="#cb21-540"></a><span class="co">#&gt; </span></span>
 <span id="cb21-541"><a href="#cb21-541"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-542"><a href="#cb21-542"></a><span class="co">#&gt;   dataExtractionID method parameter value comment</span></span>
-<span id="cb21-543"><a href="#cb21-543"></a><span class="co">#&gt; 1            FALSE   TRUE      TRUE  TRUE   FALSE</span></span>
+<span id="cb21-543"><a href="#cb21-543"></a><span class="co">#&gt; 1             &lt;NA&gt;   TRUE      &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;</span></span>
 <span id="cb21-544"><a href="#cb21-544"></a><span class="co">#&gt; </span></span>
 <span id="cb21-545"><a href="#cb21-545"></a><span class="co">#&gt; $header</span></span>
-<span id="cb21-546"><a href="#cb21-546"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#55AA00\&quot;&gt;values in suggestedValues - note&lt;/span&gt;**&quot;</span></span>
+<span id="cb21-546"><a href="#cb21-546"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#00FF00\&quot;&gt;values in suggestedValues - OK&lt;/span&gt;**&quot;</span></span>
 <span id="cb21-547"><a href="#cb21-547"></a><span class="co">#&gt; </span></span>
 <span id="cb21-548"><a href="#cb21-548"></a><span class="co">#&gt; $description</span></span>
 <span id="cb21-549"><a href="#cb21-549"></a><span class="co">#&gt; [1] &quot;Test if the metadata entered is ion the suggestedValues list. The value NA is allowed in all column types, empty cells should be avoided.&quot;</span></span>
@@ -1445,14 +1445,14 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-559"><a href="#cb21-559"></a><span class="co">#&gt; </span></span>
 <span id="cb21-560"><a href="#cb21-560"></a><span class="co">#&gt; $allowedValues</span></span>
 <span id="cb21-561"><a href="#cb21-561"></a><span class="co">#&gt; $error</span></span>
-<span id="cb21-562"><a href="#cb21-562"></a><span class="co">#&gt; [1] 3</span></span>
+<span id="cb21-562"><a href="#cb21-562"></a><span class="co">#&gt; [1] 0</span></span>
 <span id="cb21-563"><a href="#cb21-563"></a><span class="co">#&gt; </span></span>
 <span id="cb21-564"><a href="#cb21-564"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-565"><a href="#cb21-565"></a><span class="co">#&gt;   dataExtractionID method parameter value comment</span></span>
-<span id="cb21-566"><a href="#cb21-566"></a><span class="co">#&gt; 1            FALSE   TRUE      TRUE  TRUE   FALSE</span></span>
+<span id="cb21-566"><a href="#cb21-566"></a><span class="co">#&gt; 1             &lt;NA&gt;   &lt;NA&gt;      &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;</span></span>
 <span id="cb21-567"><a href="#cb21-567"></a><span class="co">#&gt; </span></span>
 <span id="cb21-568"><a href="#cb21-568"></a><span class="co">#&gt; $header</span></span>
-<span id="cb21-569"><a href="#cb21-569"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#FF0000\&quot;&gt;values in allowedValues - error&lt;/span&gt;**&quot;</span></span>
+<span id="cb21-569"><a href="#cb21-569"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#00FF00\&quot;&gt;values in allowedValues - OK&lt;/span&gt;**&quot;</span></span>
 <span id="cb21-570"><a href="#cb21-570"></a><span class="co">#&gt; </span></span>
 <span id="cb21-571"><a href="#cb21-571"></a><span class="co">#&gt; $description</span></span>
 <span id="cb21-572"><a href="#cb21-572"></a><span class="co">#&gt; [1] &quot;Test if the metadata entered is ion the allowedValues list. The value NA is allowed in all column types, empty cells should be avoided.&quot;</span></span>
@@ -1499,7 +1499,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-613"><a href="#cb21-613"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-614"><a href="#cb21-614"></a><span class="co">#&gt;           Module errorCode  isOK</span></span>
 <span id="cb21-615"><a href="#cb21-615"></a><span class="co">#&gt; 1          types        OK  TRUE</span></span>
-<span id="cb21-616"><a href="#cb21-616"></a><span class="co">#&gt; 2  allowedValues     error FALSE</span></span>
+<span id="cb21-616"><a href="#cb21-616"></a><span class="co">#&gt; 2  allowedValues        OK  TRUE</span></span>
 <span id="cb21-617"><a href="#cb21-617"></a><span class="co">#&gt; 3 dataFilesExist     error FALSE</span></span>
 <span id="cb21-618"><a href="#cb21-618"></a><span class="co">#&gt; </span></span>
 <span id="cb21-619"><a href="#cb21-619"></a><span class="co">#&gt; $header</span></span>
@@ -1558,33 +1558,33 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb21-672"><a href="#cb21-672"></a><span class="co">#&gt; </span></span>
 <span id="cb21-673"><a href="#cb21-673"></a><span class="co">#&gt; $allowedValues</span></span>
 <span id="cb21-674"><a href="#cb21-674"></a><span class="co">#&gt; $error</span></span>
-<span id="cb21-675"><a href="#cb21-675"></a><span class="co">#&gt; [1] 3</span></span>
+<span id="cb21-675"><a href="#cb21-675"></a><span class="co">#&gt; [1] 0</span></span>
 <span id="cb21-676"><a href="#cb21-676"></a><span class="co">#&gt; </span></span>
 <span id="cb21-677"><a href="#cb21-677"></a><span class="co">#&gt; $details</span></span>
 <span id="cb21-678"><a href="#cb21-678"></a><span class="co">#&gt;    dataFileName columnName columnData mappingColumn type description comment</span></span>
-<span id="cb21-679"><a href="#cb21-679"></a><span class="co">#&gt; 1         FALSE      FALSE       TRUE          TRUE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-680"><a href="#cb21-680"></a><span class="co">#&gt; 2         FALSE      FALSE       TRUE         FALSE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-681"><a href="#cb21-681"></a><span class="co">#&gt; 3         FALSE      FALSE       TRUE          TRUE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-682"><a href="#cb21-682"></a><span class="co">#&gt; 4         FALSE      FALSE       TRUE          TRUE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-683"><a href="#cb21-683"></a><span class="co">#&gt; 5         FALSE      FALSE       TRUE          TRUE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-684"><a href="#cb21-684"></a><span class="co">#&gt; 6         FALSE      FALSE       TRUE          TRUE TRUE       FALSE    TRUE</span></span>
-<span id="cb21-685"><a href="#cb21-685"></a><span class="co">#&gt; 7         FALSE      FALSE       TRUE         FALSE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-686"><a href="#cb21-686"></a><span class="co">#&gt; 8         FALSE      FALSE       TRUE          TRUE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-687"><a href="#cb21-687"></a><span class="co">#&gt; 9         FALSE      FALSE       TRUE          TRUE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-688"><a href="#cb21-688"></a><span class="co">#&gt; 10        FALSE       TRUE       TRUE         FALSE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-689"><a href="#cb21-689"></a><span class="co">#&gt; 11        FALSE      FALSE       TRUE         FALSE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-690"><a href="#cb21-690"></a><span class="co">#&gt; 12        FALSE      FALSE       TRUE          TRUE TRUE       FALSE    TRUE</span></span>
-<span id="cb21-691"><a href="#cb21-691"></a><span class="co">#&gt; 13        FALSE      FALSE       TRUE         FALSE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-692"><a href="#cb21-692"></a><span class="co">#&gt; 14        FALSE      FALSE       TRUE          TRUE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-693"><a href="#cb21-693"></a><span class="co">#&gt; 15        FALSE       TRUE       TRUE         FALSE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-694"><a href="#cb21-694"></a><span class="co">#&gt; 16        FALSE      FALSE       TRUE          TRUE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-695"><a href="#cb21-695"></a><span class="co">#&gt; 17        FALSE      FALSE       TRUE          TRUE TRUE       FALSE    TRUE</span></span>
-<span id="cb21-696"><a href="#cb21-696"></a><span class="co">#&gt; 18        FALSE      FALSE       TRUE         FALSE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-697"><a href="#cb21-697"></a><span class="co">#&gt; 19        FALSE      FALSE       TRUE          TRUE TRUE        TRUE    TRUE</span></span>
-<span id="cb21-698"><a href="#cb21-698"></a><span class="co">#&gt; 20        FALSE      FALSE       TRUE         FALSE TRUE        TRUE    TRUE</span></span>
+<span id="cb21-679"><a href="#cb21-679"></a><span class="co">#&gt; 1          &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-680"><a href="#cb21-680"></a><span class="co">#&gt; 2          &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-681"><a href="#cb21-681"></a><span class="co">#&gt; 3          &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-682"><a href="#cb21-682"></a><span class="co">#&gt; 4          &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-683"><a href="#cb21-683"></a><span class="co">#&gt; 5          &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-684"><a href="#cb21-684"></a><span class="co">#&gt; 6          &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-685"><a href="#cb21-685"></a><span class="co">#&gt; 7          &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-686"><a href="#cb21-686"></a><span class="co">#&gt; 8          &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-687"><a href="#cb21-687"></a><span class="co">#&gt; 9          &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-688"><a href="#cb21-688"></a><span class="co">#&gt; 10         &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-689"><a href="#cb21-689"></a><span class="co">#&gt; 11         &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-690"><a href="#cb21-690"></a><span class="co">#&gt; 12         &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-691"><a href="#cb21-691"></a><span class="co">#&gt; 13         &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-692"><a href="#cb21-692"></a><span class="co">#&gt; 14         &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-693"><a href="#cb21-693"></a><span class="co">#&gt; 15         &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-694"><a href="#cb21-694"></a><span class="co">#&gt; 16         &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-695"><a href="#cb21-695"></a><span class="co">#&gt; 17         &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-696"><a href="#cb21-696"></a><span class="co">#&gt; 18         &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-697"><a href="#cb21-697"></a><span class="co">#&gt; 19         &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
+<span id="cb21-698"><a href="#cb21-698"></a><span class="co">#&gt; 20         &lt;NA&gt;       &lt;NA&gt;       TRUE          &lt;NA&gt; TRUE        &lt;NA&gt;    &lt;NA&gt;</span></span>
 <span id="cb21-699"><a href="#cb21-699"></a><span class="co">#&gt; </span></span>
 <span id="cb21-700"><a href="#cb21-700"></a><span class="co">#&gt; $header</span></span>
-<span id="cb21-701"><a href="#cb21-701"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#FF0000\&quot;&gt;values in allowedValues - error&lt;/span&gt;**&quot;</span></span>
+<span id="cb21-701"><a href="#cb21-701"></a><span class="co">#&gt; [1] &quot;**&lt;span style=\&quot;color:#00FF00\&quot;&gt;values in allowedValues - OK&lt;/span&gt;**&quot;</span></span>
 <span id="cb21-702"><a href="#cb21-702"></a><span class="co">#&gt; </span></span>
 <span id="cb21-703"><a href="#cb21-703"></a><span class="co">#&gt; $description</span></span>
 <span id="cb21-704"><a href="#cb21-704"></a><span class="co">#&gt; [1] &quot;Test if the metadata entered is ion the allowedValues list. The value NA is allowed in all column types, empty cells should be avoided.&quot;</span></span>
@@ -1649,12 +1649,13 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <p>You can save the xml to a file by using</p>
 <div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>xmlFile &lt;-<span class="st">  </span><span class="kw">tempfile</span>(<span class="dt">fileext =</span> <span class="st">&quot;.xml&quot;</span>)</span>
 <span id="cb24-2"><a href="#cb24-2"></a></span>
-<span id="cb24-3"><a href="#cb24-3"></a>xml2<span class="op">::</span><span class="kw">write_xml</span>(<span class="dt">x =</span> xml, <span class="dt">file =</span> xmlFile)</span></code></pre></div>
+<span id="cb24-3"><a href="#cb24-3"></a>xml2<span class="op">::</span><span class="kw">write_xml</span>(<span class="dt">x =</span> xml, <span class="dt">file =</span> xmlFile)</span>
+<span id="cb24-4"><a href="#cb24-4"></a><span class="co">#&gt; NULL</span></span></code></pre></div>
 <p>or directly in one command</p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>xmlFile &lt;-<span class="st">  </span><span class="kw">tempfile</span>(<span class="dt">fileext =</span> <span class="st">&quot;.xml&quot;</span>)</span>
 <span id="cb25-2"><a href="#cb25-2"></a></span>
 <span id="cb25-3"><a href="#cb25-3"></a><span class="kw">write_xml</span>( <span class="dt">x =</span> x, <span class="dt">file =</span> xmlFile )</span>
-<span id="cb25-4"><a href="#cb25-4"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpnB5tbC/file1ee75470c14.xml&quot;</span></span></code></pre></div>
+<span id="cb25-4"><a href="#cb25-4"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//Rtmp2pTKaj/file413871e733f0.xml&quot;</span></span></code></pre></div>
 </div>
 <div id="re-import-from-xml-into-r" class="section level2">
 <h2>Re-import from xml into R</h2>
