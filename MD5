@@ -1,4 +1,4 @@
-da7720d79e57d535ebebb4d8373ea7f8 *DESCRIPTION
+a7fbfd335c3b440148e90616d9205ea9 *DESCRIPTION
 0606ea8db0bdf283edd0a391a025d178 *LICENSE
 62958e5a43eb18f7131ac311ef14ae20 *NAMESPACE
 84a99b78bc5a363f811a780692ff306e *R/aaa.R
@@ -56,7 +56,7 @@ f50986d1b5d78b6de08c408196c7a1d9 *R/scheme_uninstall.R
 47ecccf390eb835a06de4a7b65c8beda *R/validate.R
 caada4d2f1694648e8e44e6bf4b71037 *R/validate.character.R
 9ebdb3ac6617df702ef2e7f4eabe8ea3 *R/validate.dmdSchemeSet_raw.R
-2ca30934014d7ff99367e94a850b7011 *R/validate_func.R
+abf19189107e16b30f9edd46735d1100 *R/validate_func.R
 bd4b3a2058e9fb47f60f5dac2c0e6c69 *R/validation_error_functions.R
 df8d22728b0b823ca78c4e529f8fed44 *R/write_excel.R
 4b34188b08e4d5223c22060d2e9cc7e3 *R/write_xml.R
@@ -65,13 +65,13 @@ fa16ed517db2773f39fab6e26e0805b5 *build/vignette.rds
 6680830fe797df2ae0e3c0d182cbe261 *inst/aaa.R
 0d838f7e4bcc9071fd95a140db3b9624 *inst/doc/Howto_create_new_scheme.R
 fbf71ed1b09bdaeb2acb4718a5aeac8a *inst/doc/Howto_create_new_scheme.Rmd
-d5d79a0f44be583ad0808e580f988d25 *inst/doc/Howto_create_new_scheme.html
+a2a11abf81e146243041c74fc7d2964a *inst/doc/Howto_create_new_scheme.html
 5995b3dc15fb1f1a5a92e83d1782fb08 *inst/doc/minimum_requirements_dmdscheme.R
 e8dc31c0847ddb47668a762ea93027bc *inst/doc/minimum_requirements_dmdscheme.Rmd
-0966f82878c0592fa15ea00c809521cc *inst/doc/minimum_requirements_dmdscheme.html
+46229ed7ae414d12671dc01ec20e5816 *inst/doc/minimum_requirements_dmdscheme.html
 d956ff19e7b964ac36ecc5c7adea6141 *inst/doc/r_package_introduction.R
 6c27a5ffb984dfeb0f2263b9537a2970 *inst/doc/r_package_introduction.Rmd
-3e0dab6bdc09a5eba17157b57b796f25 *inst/doc/r_package_introduction.html
+b47032c9c21489d67bd7e84f4646ceb9 *inst/doc/r_package_introduction.html
 232a14443216e4c37dc087f05b982d5b *inst/reports/validation_report.Rmd
 55bd17e78242cb04f47b98c5ca322d32 *inst/reports/validation_report.md
 a4c41b89ee25e2b4b2ca8398f148bfcb *inst/shiny_apps/dmd_app/rsconnect/shinyapps.io/rmkrug/dmd_app.dcf
