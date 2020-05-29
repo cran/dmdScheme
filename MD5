@@ -1,4 +1,4 @@
-a7fbfd335c3b440148e90616d9205ea9 *DESCRIPTION
+cf09c59f8c3090aa7284961609c70f9d *DESCRIPTION
 0606ea8db0bdf283edd0a391a025d178 *LICENSE
 62958e5a43eb18f7131ac311ef14ae20 *NAMESPACE
 84a99b78bc5a363f811a780692ff306e *R/aaa.R
@@ -36,7 +36,7 @@ cb178a15b2637b1cc09eba13be0987b7 *R/read_excel_raw.R
 36c564598a39b98a1d115eaec9fd7735 *R/read_xml.R
 441caf6e6ce5162de9928ba88e2951c3 *R/report.R
 ff8568e71e062e3f431d3fc3712496b3 *R/report.character.R
-0402252466c2c19620b75e5d92575634 *R/report.dmdScheme_validation.R
+939af7c3ba917fff20d21a52d6dbf329 *R/report.dmdScheme_validation.R
 5dcc975a2ec49fe8b07976f51e62af9c *R/run_app.R
 f5457ed6cb9cc51d8b954779b9cc67f8 *R/scheme_active.R
 7d5b66e31acefa43a6e73106b9e5e513 *R/scheme_default.R
@@ -65,13 +65,13 @@ fa16ed517db2773f39fab6e26e0805b5 *build/vignette.rds
 6680830fe797df2ae0e3c0d182cbe261 *inst/aaa.R
 0d838f7e4bcc9071fd95a140db3b9624 *inst/doc/Howto_create_new_scheme.R
 fbf71ed1b09bdaeb2acb4718a5aeac8a *inst/doc/Howto_create_new_scheme.Rmd
-a2a11abf81e146243041c74fc7d2964a *inst/doc/Howto_create_new_scheme.html
+1ddfb6d73e8ec62a8ca9bf1a66d88d82 *inst/doc/Howto_create_new_scheme.html
 5995b3dc15fb1f1a5a92e83d1782fb08 *inst/doc/minimum_requirements_dmdscheme.R
 e8dc31c0847ddb47668a762ea93027bc *inst/doc/minimum_requirements_dmdscheme.Rmd
-46229ed7ae414d12671dc01ec20e5816 *inst/doc/minimum_requirements_dmdscheme.html
+13f96e4753c162e3db1dd0d167364838 *inst/doc/minimum_requirements_dmdscheme.html
 d956ff19e7b964ac36ecc5c7adea6141 *inst/doc/r_package_introduction.R
 6c27a5ffb984dfeb0f2263b9537a2970 *inst/doc/r_package_introduction.Rmd
-b47032c9c21489d67bd7e84f4646ceb9 *inst/doc/r_package_introduction.html
+1f0142a98e9218d097c7dcb265fe01cf *inst/doc/r_package_introduction.html
 232a14443216e4c37dc087f05b982d5b *inst/reports/validation_report.Rmd
 55bd17e78242cb04f47b98c5ca322d32 *inst/reports/validation_report.md
 a4c41b89ee25e2b4b2ca8398f148bfcb *inst/shiny_apps/dmd_app/rsconnect/shinyapps.io/rmkrug/dmd_app.dcf
@@ -102,7 +102,7 @@ a2aa0bde0a68da5917e4433234587d27 *man/print_dmdScheme_validation_details.Rd
 36e194692a989b0ef3c2cf2881358587 *man/read_excel_raw.Rd
 e711f4c4a24c4922dc8d7e5c17cbcaf2 *man/read_xml.Rd
 46cf0d11e78f2c79b008794ba92a72fb *man/reexports.Rd
-483e7a2728068e76c5a330597703c76d *man/report.Rd
+c8c8ef14ecf300ee13d671d0379653d7 *man/report.Rd
 ad68d6490ed48d08d0a1734fc13ea40b *man/run_app.Rd
 e6faef4872e079a4997785a47393e83d *man/scheme.Rd
 07db56a241142648a3025d3a2f0c1824 *man/scheme_make.Rd
@@ -147,6 +147,8 @@ bdede2241e292cfc3356bacf53bc64bb *tests/testthat/test-10-excel.R
 55bf46f8168aeddeb67b95450f222be1 *tests/testthat/test-11-xml.R
 0b3de325e13b401cc5a594163a34ef56 *tests/testthat/test-13-upgrade_old_files.R
 fbf71ed1b09bdaeb2acb4718a5aeac8a *vignettes/Howto_create_new_scheme.Rmd
+3db39412f3382f5dbbd1e3c53b302687 *vignettes/custom_template.R
+254bca912f256226db794b4c772c3166 *vignettes/custom_template.html
 1b4d6e9f4f251ac9139c94f52c98c78d *vignettes/figs/enter_new_data.png
 78da4ed0cfb7978fdff784d52aed3e36 *vignettes/figs/name_version.png
 e8dc31c0847ddb47668a762ea93027bc *vignettes/minimum_requirements_dmdscheme.Rmd
