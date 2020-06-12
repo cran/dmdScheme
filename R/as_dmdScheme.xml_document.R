@@ -7,7 +7,6 @@
 #'
 #'
 #' @importFrom xml2 xml_attrs as_list xml_name xml_children
-#' @importFrom rlang :=
 #'
 #' @rdname as_dmdScheme
 #' @export
@@ -16,6 +15,7 @@
 #' xml <- as_xml(dmdScheme_example())
 #' x <- as_dmdScheme(xml)
 #' all.equal(dmdScheme_example(), x)
+#'}
 #'
 as_dmdScheme.xml_document <- function(
   x,
