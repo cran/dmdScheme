@@ -1,32 +1,52 @@
 ## ----setup, include = FALSE---------------------------------------------------
+library(knitr)
+
 knitr::opts_chunk$set(
 	echo = TRUE,
 	eval = TRUE,
   	collapse = TRUE,
 	message = TRUE,
-  	comment = "#>"
+  	comment = "#>",
+  	# tidy.opts = list(width.cutoff=60),
+  	# tidy = TRUE,
+  	linewidth = 60
 )
 library(dmdScheme)
 library(here)
 library(kableExtra)
 
+## This is from here https://groups.google.com/forum/#!topic/knitr/WnxJfORwCTk
+
+# hook_output = knitr::knit_hooks$get('output')
+# knitr::knit_hooks$set(output = function(x, options) {
+#   # this hook is used only when the linewidth option is not NULL
+#   if (!is.null(n <- options$linewidth)) {
+#     x = knitr:::split_lines(x)
+#     # any lines wider than n should be wrapped
+#     if (any(nchar(x) > n)) x = strwrap(x, width = n)
+#     x = paste(x, collapse = '\n')
+#   }
+#   hook_output(x, options)
+# })
+
+
 ## ----fig1, echo = FALSE, fig.show = "hold", out.width = "33%", fig.align = "default", fig.cap = "**Figure 1**: Workflow of using `dmdScheme` (A) via the web app, (B) via the app locally, (C) via the R prompt. Square boxes indicate steps which are not common to all three, rounded boxes indicate steps identical to the different ways, although how they are executed can differ."----
-knitr::include_graphics("./figs/workflow_enterMetaData_app_online.png")
-knitr::include_graphics("./figs/workflow_enterMetaData_app_local.png")
-knitr::include_graphics("./figs/workflow_enterMetaData_R.png")
+knitr::include_graphics("./figs/workflow_enterMetaData_app_online.png", auto_pdf = TRUE)
+knitr::include_graphics("./figs/workflow_enterMetaData_app_local.png", auto_pdf = TRUE)
+knitr::include_graphics("./figs/workflow_enterMetaData_R.png", auto_pdf = TRUE)
 
 ## ----fig2, fig.show = "hold", out.width = "40%", fig.align = "center", fig.cap = "**Figure 2**: Screenshot of the dmdScheme app.", echo = FALSE----
-knitr::include_graphics("./figs/app.jpg")
+knitr::include_graphics("./figs/app.jpg", auto_pdf = TRUE)
 
 ## ----fig3, fig.show = "hold", out.width = "90%", fig.align = "center", fig.cap = "**Figure 3**: Some example tabs from the `emeScheme` spreadsheet. The first to contains bibliometric metadata modelled along the requirements by DataCite and the authors in the second tab. The third one contains metadata about the Species used in the experiment. The complete spreadsheet can be found in the supplemental material `emeScheme.xlsx`.", echo = FALSE----
-knitr::include_graphics("./figs/Spreadsheet_01_MdBibliometric.jpg")
-knitr::include_graphics("./figs/Spreadsheet_02_MdAuthor.jpg")
-# knitr::include_graphics("./figs/Spreadsheet_03_Experiment.jpg")
-knitr::include_graphics("./figs/Spreadsheet_04_Genus.jpg")
-# knitr::include_graphics("./figs/Spreadsheet_08_DataFileMetadata.jpg")
+knitr::include_graphics("./figs/Spreadsheet_01_MdBibliometric.jpg", auto_pdf = TRUE)
+knitr::include_graphics("./figs/Spreadsheet_02_MdAuthor.jpg", auto_pdf = TRUE)
+# knitr::include_graphics("./figs/Spreadsheet_03_Experiment.jpg", auto_pdf = TRUE)
+knitr::include_graphics("./figs/Spreadsheet_04_Genus.jpg", auto_pdf = TRUE)
+# knitr::include_graphics("./figs/Spreadsheet_08_DataFileMetadata.jpg", auto_pdf = TRUE)
 
 ## ----fig4, fig.show = "hold", out.width = "90%", fig.align = "center", fig.cap = "**Figure 4**: Example validation report, as cfrom the validation included in the `emeScheme` package [@Krug2019b].", echo = FALSE----
-knitr::include_graphics("./figs/ValidationReport.jpg")
+knitr::include_graphics("./figs/ValidationReport.jpg", auto_pdf = TRUE)
 
 ## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  install.packages("dmdScheme")
@@ -90,12 +110,6 @@ scheme_uninstall(name = "emeScheme", version = "0.9.5")
 
 ## -----------------------------------------------------------------------------
 scheme_installed(name = "emeScheme", version = "0.9.5")
-
-## -----------------------------------------------------------------------------
-scheme_path_xlsx()
-
-## -----------------------------------------------------------------------------
-scheme_path_xml()
 
 ## ----eval = FALSE-------------------------------------------------------------
 #  open_new_spreadsheet()
@@ -172,5 +186,5 @@ x
 #  scheme_use("NAME", "VERSION")
 
 ## ----fig5, fig.show = "hold", out.width = "50%", fig.align = "center", fig.cap = "**Figure 5**: Create a new domain specific scheme based on dmdScheme.", echo = FALSE----
-knitr::include_graphics("./figs/workflow_newScheme.png")
+knitr::include_graphics("./figs/workflow_newScheme.png", auto_pdf = TRUE)
 
