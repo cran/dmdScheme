@@ -1,4 +1,4 @@
-f2bed7e60d5ae4bdb3fdd96d7360b788 *DESCRIPTION
+2ef69fcc7115f083b78852ee4f5651e1 *DESCRIPTION
 0606ea8db0bdf283edd0a391a025d178 *LICENSE
 1f7cfbb16ea855d4f85fee1661ffa006 *NAMESPACE
 3ead9ad792d15de9e1ac84e7488e6cc9 *R/aaa.R
@@ -38,8 +38,8 @@ a887d0f2104f1f951fec965589aab22f *R/read_excel.R
 cb178a15b2637b1cc09eba13be0987b7 *R/read_excel_raw.R
 36c564598a39b98a1d115eaec9fd7735 *R/read_xml.R
 441caf6e6ce5162de9928ba88e2951c3 *R/report.R
-ff8568e71e062e3f431d3fc3712496b3 *R/report.character.R
-939af7c3ba917fff20d21a52d6dbf329 *R/report.dmdScheme_validation.R
+11bca2ad016e44c85343ed191ce29d66 *R/report.character.R
+9e92315127c02b9e96765e49345307ef *R/report.dmdScheme_validation.R
 5dcc975a2ec49fe8b07976f51e62af9c *R/run_app.R
 f5457ed6cb9cc51d8b954779b9cc67f8 *R/scheme_active.R
 7d5b66e31acefa43a6e73106b9e5e513 *R/scheme_default.R
@@ -70,10 +70,9 @@ bd4b3a2058e9fb47f60f5dac2c0e6c69 *R/validation_error_functions.R
 6680830fe797df2ae0e3c0d182cbe261 *inst/aaa.R
 150e295fd15fd6f7268fdd016f5659e0 *inst/doc/Develop_and_Use_the_dmdScheme.R
 b061dd3428dee6e599f8961422ae48b8 *inst/doc/Develop_and_Use_the_dmdScheme.Rmd
-8974cdc0a90642b82e4e6abc1ead782f *inst/doc/Develop_and_Use_the_dmdScheme.html
+745f1f2fcf92acfa533888a47b12e923 *inst/doc/Develop_and_Use_the_dmdScheme.html
 8aeae9abb10e0e1563c435de1d27c592 *inst/index.md
 232a14443216e4c37dc087f05b982d5b *inst/reports/validation_report.Rmd
-55bd17e78242cb04f47b98c5ca322d32 *inst/reports/validation_report.md
 9a69a43f6a33114a5b14c0b46c221a17 *inst/shiny_apps/dmd_app/rsconnect/shinyapps.io/rmkrug/dmd_app.dcf
 06592d7458c62115d1769d3bc99ba04d *inst/shiny_apps/dmd_app/server.R
 20355f5e83a6c8ff780929f17d6f94c5 *inst/shiny_apps/dmd_app/ui.R
@@ -104,7 +103,7 @@ a2aa0bde0a68da5917e4433234587d27 *man/print_dmdScheme_validation_details.Rd
 36e194692a989b0ef3c2cf2881358587 *man/read_excel_raw.Rd
 e711f4c4a24c4922dc8d7e5c17cbcaf2 *man/read_xml.Rd
 46cf0d11e78f2c79b008794ba92a72fb *man/reexports.Rd
-c8c8ef14ecf300ee13d671d0379653d7 *man/report.Rd
+e55a1e6af5877112c1aed6ff82ae8dc5 *man/report.Rd
 ad68d6490ed48d08d0a1734fc13ea40b *man/run_app.Rd
 60ac59cf180e75d78788903a4fec3b41 *man/scheme.Rd
 1e5fd76eb9ba44046979bb47d4db6454 *man/scheme_make.Rd
