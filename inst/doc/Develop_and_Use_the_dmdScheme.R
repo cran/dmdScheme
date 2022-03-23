@@ -1,6 +1,27 @@
 ## ----setup, include = FALSE---------------------------------------------------
 library(knitr)
 
+### See https://bookdown.org/yihui/rmarkdown-cookbook/hook-truncate.html
+# save the built-in output hook
+hook_output <- knitr::knit_hooks$get("output")
+
+# set a new output hook to truncate text output
+knitr::knit_hooks$set(output = function(x, options) {
+  n <- options$out.lines
+  if (!is.null(n)) {
+    x <- xfun::split_lines(x)
+    if (length(x) > n) {
+      # truncate the output
+      x <- c(head(x, n), "....\n")
+    }
+    x <- paste(x, collapse = "\n")
+  }
+  hook_output(x, options)
+})
+###
+
+
+
 knitr::opts_chunk$set(
 	echo = TRUE,
 	eval = TRUE,
@@ -9,7 +30,8 @@ knitr::opts_chunk$set(
   	comment = "#>",
   	# tidy.opts = list(width.cutoff=60),
   	# tidy = TRUE,
-  	linewidth = 60
+  	linewidth = 60,
+	out.lines = 4
 )
 library(dmdScheme)
 library(here)
@@ -49,19 +71,29 @@ knitr::include_graphics("./figs/Spreadsheet_04_Genus.jpg", auto_pdf = TRUE)
 knitr::include_graphics("./figs/ValidationReport.jpg", auto_pdf = TRUE)
 
 ## ----echo = TRUE, eval = FALSE------------------------------------------------
-#  install.packages("dmdScheme")
+#  # Enable universe by uzh-peg
+#  options(repos = c(
+#    uzhpeg = 'https://uzh-peg.r-universe.dev',
+#    CRAN = 'https://cloud.r-project.org'))
+#  
+#  # Install dmdScheme
+#  install.packages('dmdScheme')
 
 ## ----echo=TRUE, eval = FALSE--------------------------------------------------
-#  ## install the devtools package if not installed yet
-#  # install.packages("devtools")
+#  ## install the remotes package if not installed yet
+#  if (require("remotes")) {
+#    install.packages("remotes")
+#  }
 #  
-#  devtools::install_github("Exp-Micro-Ecol-Hub/dmdScheme", ref = "master", build_opts = NULL)
+#  devtools::install_github("UZH-PEG/dmdScheme", ref = "master", build_opts = NULL)
 
 ## ----echo=TRUE, eval = FALSE--------------------------------------------------
-#  ## install the devtools package if not installed yet
-#  # install.packages("devtools")
+#  ## install the remotes package if not installed yet
+#  if (require("remotes")) {
+#    install.packages("remotes")
+#  }
 #  
-#  devtools::install_github("Exp-Micro-Ecol-Hub/dmdScheme", ref = "dev", build_opts = NULL)
+#  devtools::install_github("UZH-PEG/dmdScheme", ref = "dev", build_opts = NULL)
 
 ## ----echo=TRUE, eval = FALSE--------------------------------------------------
 #  cache(createPermanent = TRUE)
