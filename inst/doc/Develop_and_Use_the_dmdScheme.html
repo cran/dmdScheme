@@ -341,70 +341,72 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <div id="TOC">
 <ul>
-<li><a href="#using-the-dmdscheme">Using the <code>dmdScheme</code></a>
+<li><a href="#using-the-dmdscheme" id="toc-using-the-dmdscheme">Using
+the <code>dmdScheme</code></a>
 <ul>
-<li><a href="#preparation">Preparation</a></li>
-<li><a href="#select-scheme">Select scheme</a></li>
-<li><a href="#download-new-scheme">Download new scheme</a></li>
-<li><a href="#enter-edit-metadata-on-downloaded-xlsx">Enter / Edit
-metadata on downloaded xlsx</a></li>
-<li><a href="#validate-metadata-and-create-report">Validate metadata and
+<li><a href="#preparation" id="toc-preparation">Preparation</a></li>
+<li><a href="#select-scheme" id="toc-select-scheme">Select
+scheme</a></li>
+<li><a href="#download-new-scheme" id="toc-download-new-scheme">Download
+new scheme</a></li>
+<li><a href="#enter-edit-metadata-on-downloaded-xlsx" id="toc-enter-edit-metadata-on-downloaded-xlsx">Enter / Edit metadata on
+downloaded xlsx</a></li>
+<li><a href="#validate-metadata-and-create-report" id="toc-validate-metadata-and-create-report">Validate metadata and
 create report</a></li>
-<li><a href="#export-uploaded-spreadsheet-to-xml">Export uploaded
-spreadsheet to xml</a></li>
+<li><a href="#export-uploaded-spreadsheet-to-xml" id="toc-export-uploaded-spreadsheet-to-xml">Export uploaded spreadsheet
+to xml</a></li>
 </ul></li>
-<li><a href="#the-r-package">The R Package</a>
+<li><a href="#the-r-package" id="toc-the-r-package">The R Package</a>
 <ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#loading-the-package">Loading the package</a></li>
-<li><a href="#managing-installed-schemes">Managing installed schemes</a>
+<li><a href="#installation" id="toc-installation">Installation</a></li>
+<li><a href="#loading-the-package" id="toc-loading-the-package">Loading
+the package</a></li>
+<li><a href="#managing-installed-schemes" id="toc-managing-installed-schemes">Managing installed schemes</a>
 <ul>
-<li><a href="#scheme_default"><code>scheme_default()</code></a></li>
-<li><a href="#scheme_repo"><code>scheme_repo()</code></a></li>
-<li><a href="#scheme_list_in_repo"><code>scheme_list_in_repo()</code></a></li>
-<li><a href="#scheme_download"><code>scheme_download()</code></a></li>
-<li><a href="#scheme_install"><code>scheme_install()</code></a></li>
-<li><a href="#scheme_install_r_package"><code>scheme_install_r_package()</code></a></li>
-<li><a href="#scheme_list"><code>scheme_list()</code></a></li>
-<li><a href="#scheme_use"><code>scheme_use()</code></a></li>
-<li><a href="#scheme_active"><code>scheme_active()</code></a></li>
-<li><a href="#scheme_path_index_template"><code>scheme_path_index_template()</code></a></li>
-<li><a href="#scheme_path_xlsx"><code>scheme_path_xlsx()</code></a></li>
-<li><a href="#scheme_path_xml"><code>scheme_path_xml()</code></a></li>
-<li><a href="#scheme_uninstall"><code>scheme_uninstall()</code></a></li>
-<li><a href="#scheme_installed"><code>scheme_installed()</code></a></li>
-<li><a href="#scheme_make"><code>scheme_make()</code></a></li>
+<li><a href="#scheme_default" id="toc-scheme_default"><code>scheme_default()</code></a></li>
+<li><a href="#scheme_repo" id="toc-scheme_repo"><code>scheme_repo()</code></a></li>
+<li><a href="#scheme_list_in_repo" id="toc-scheme_list_in_repo"><code>scheme_list_in_repo()</code></a></li>
+<li><a href="#scheme_download" id="toc-scheme_download"><code>scheme_download()</code></a></li>
+<li><a href="#scheme_install" id="toc-scheme_install"><code>scheme_install()</code></a></li>
+<li><a href="#scheme_install_r_package" id="toc-scheme_install_r_package"><code>scheme_install_r_package()</code></a></li>
+<li><a href="#scheme_list" id="toc-scheme_list"><code>scheme_list()</code></a></li>
+<li><a href="#scheme_use" id="toc-scheme_use"><code>scheme_use()</code></a></li>
+<li><a href="#scheme_active" id="toc-scheme_active"><code>scheme_active()</code></a></li>
+<li><a href="#scheme_path_index_template" id="toc-scheme_path_index_template"><code>scheme_path_index_template()</code></a></li>
+<li><a href="#scheme_path_xlsx" id="toc-scheme_path_xlsx"><code>scheme_path_xlsx()</code></a></li>
+<li><a href="#scheme_path_xml" id="toc-scheme_path_xml"><code>scheme_path_xml()</code></a></li>
+<li><a href="#scheme_uninstall" id="toc-scheme_uninstall"><code>scheme_uninstall()</code></a></li>
+<li><a href="#scheme_installed" id="toc-scheme_installed"><code>scheme_installed()</code></a></li>
+<li><a href="#scheme_make" id="toc-scheme_make"><code>scheme_make()</code></a></li>
 </ul></li>
 </ul></li>
-<li><a href="#entering-new-metadata">Entering new Metadata</a>
+<li><a href="#entering-new-metadata" id="toc-entering-new-metadata">Entering new Metadata</a>
 <ul>
-<li><a href="#importing-data-from-excel-sheet">Importing Data from Excel
+<li><a href="#importing-data-from-excel-sheet" id="toc-importing-data-from-excel-sheet">Importing Data from Excel
 Sheet</a></li>
-<li><a href="#print-dmdscheme-data">Print dmdScheme Data</a></li>
-<li><a href="#validating-your-metadata">Validating your
-metadata</a></li>
-<li><a href="#converting-metadata-to-xml">Converting Metadata to
-xml</a></li>
-<li><a href="#re-import-from-xml-into-r">Re-import from xml into
-R</a></li>
+<li><a href="#print-dmdscheme-data" id="toc-print-dmdscheme-data">Print
+dmdScheme Data</a></li>
+<li><a href="#validating-your-metadata" id="toc-validating-your-metadata">Validating your metadata</a></li>
+<li><a href="#converting-metadata-to-xml" id="toc-converting-metadata-to-xml">Converting Metadata to xml</a></li>
+<li><a href="#re-import-from-xml-into-r" id="toc-re-import-from-xml-into-r">Re-import from xml into R</a></li>
 </ul></li>
-<li><a href="#developing-new-dmdschemes-derived-scheme-definitions">Developing
+<li><a href="#developing-new-dmdschemes-derived-scheme-definitions" id="toc-developing-new-dmdschemes-derived-scheme-definitions">Developing
 new dmdSchemes derived scheme definitions</a>
 <ul>
-<li><a href="#create-and-edit-new-definition">Create and edit new
+<li><a href="#create-and-edit-new-definition" id="toc-create-and-edit-new-definition">Create and edit new
 definition</a></li>
-<li><a href="#minimum-requirements-for-metadata-schemes-derived-from-dmdscheme">Minimum
+<li><a href="#minimum-requirements-for-metadata-schemes-derived-from-dmdscheme" id="toc-minimum-requirements-for-metadata-schemes-derived-from-dmdscheme">Minimum
 requirements for metadata schemes derived from
 <code>dmdScheme</code></a></li>
 </ul></li>
-<li><a href="#developing-accompanying-r-packages">Developing
-accompanying R packages</a></li>
-<li><a href="#customize-the-index-template">Customize the index
-template</a>
+<li><a href="#developing-accompanying-r-packages" id="toc-developing-accompanying-r-packages">Developing accompanying R
+packages</a></li>
+<li><a href="#customize-the-index-template" id="toc-customize-the-index-template">Customize the index template</a>
 <ul>
-<li><a href="#tokens-which-are-replaced-with-values-from-a-dmdscheme">Tokens
+<li><a href="#tokens-which-are-replaced-with-values-from-a-dmdscheme" id="toc-tokens-which-are-replaced-with-values-from-a-dmdscheme">Tokens
 which are replaced with values from a <code>dmdScheme</code></a></li>
-<li><a href="#special-tokens">Special tokens</a></li>
+<li><a href="#special-tokens" id="toc-special-tokens">Special
+tokens</a></li>
 </ul></li>
 </ul>
 </div>
@@ -678,7 +680,7 @@ destfile. The function returns the fully qualified file name to the
 downloaded file invisibly.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_download</span>(<span class="at">name =</span> <span class="st">&quot;emeScheme&quot;</span>, <span class="at">version =</span> <span class="st">&quot;0.9.5&quot;</span>, <span class="at">destfile =</span> <span class="fu">tempfile</span>())</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning in normalizePath(destfile): path[1]=&quot;/var/folders/50/</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/file724a56a1793c&quot;: No such file or</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; wcr5bjwn75q595n6x82gxj280000gq/T//RtmpuzWIjW/file993f348fa55c&quot;: No such file or</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; directory</span></span></code></pre></div>
 </div>
 <div id="scheme_install" class="section level3">
@@ -688,7 +690,7 @@ uses <code>scheme_download()</code> to download the scheme definition
 from the default <a href="https://github.com/Exp-Micro-Ecol-Hub/dmdSchemeRepository">github
 repository</a> and installs it. The usage is</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_install</span>(<span class="at">name =</span> <span class="st">&quot;emeScheme&quot;</span>, <span class="at">version =</span> <span class="st">&quot;0.9.5&quot;</span>)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Scheme definition `/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/file724a4707e67e/emeScheme_0.9.5.tar.gz, installed with</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Scheme definition `/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpuzWIjW/file993f88370a4/emeScheme_0.9.5.tar.gz, installed with</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; name:    emeScheme</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; version: 0.9.5</span></span></code></pre></div>
 </div>
@@ -737,21 +739,21 @@ used!</p>
 (<strong>not</strong> the acompanying package!).</li>
 </ol>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_path_index_template</span>()</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/dmdScheme_724a2af74d57/installedSchemes/dmdScheme_0.9.9/index.md&quot;</span></span></code></pre></div>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpuzWIjW/dmdScheme_993fbd8cadf/installedSchemes/dmdScheme_0.9.9/index.md&quot;</span></span></code></pre></div>
 </div>
 <div id="scheme_path_xlsx" class="section level3">
 <h3><code>scheme_path_xlsx()</code></h3>
 <p>Returns the path to the <code>xlsx</code> file included in the scheme
 package.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_path_xlsx</span>()</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/dmdScheme_724a2af74d57/installedSchemes/dmdScheme_0.9.9/dmdScheme_0.9.9.xlsx&quot;</span></span></code></pre></div>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpuzWIjW/dmdScheme_993fbd8cadf/installedSchemes/dmdScheme_0.9.9/dmdScheme_0.9.9.xlsx&quot;</span></span></code></pre></div>
 </div>
 <div id="scheme_path_xml" class="section level3">
 <h3><code>scheme_path_xml()</code></h3>
 <p>Returns the path to the <code>xml</code> file included in the scheme
 package.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_path_xml</span>()</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/dmdScheme_724a2af74d57/installedSchemes/dmdScheme_0.9.9/dmdScheme_0.9.9.xml&quot;</span></span></code></pre></div>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpuzWIjW/dmdScheme_993fbd8cadf/installedSchemes/dmdScheme_0.9.9/dmdScheme_0.9.9.xml&quot;</span></span></code></pre></div>
 </div>
 <div id="scheme_uninstall" class="section level3">
 <h3><code>scheme_uninstall()</code></h3>
@@ -760,7 +762,7 @@ the scheme library, and moved to a temporary flder which wil be deleted
 at the end of the R session.</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_uninstall</span>(<span class="at">name =</span> <span class="st">&quot;emeScheme&quot;</span>, <span class="at">version =</span> <span class="st">&quot;0.9.5&quot;</span>)</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Scheme emeScheme_0.9.5 deleted and moved to</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/file724a583cb710&quot;</span></span></code></pre></div>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpuzWIjW/file993f65891346&quot;</span></span></code></pre></div>
 </div>
 <div id="scheme_installed" class="section level3">
 <h3><code>scheme_installed()</code></h3>
@@ -1018,7 +1020,7 @@ defined in the <code>xml2</code> package to do further processing:</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>xmlFile <span class="ot">&lt;-</span>  <span class="fu">tempfile</span>(<span class="at">fileext =</span> <span class="st">&quot;.xml&quot;</span>)</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="fu">write_xml</span>( <span class="at">x =</span> x, <span class="at">file =</span> xmlFile )</span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/file724a54013ca6.xml&quot;</span></span></code></pre></div>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpuzWIjW/file993f238a887a.xml&quot;</span></span></code></pre></div>
 </div>
 <div id="re-import-from-xml-into-r" class="section level2">
 <h2>Re-import from xml into R</h2>

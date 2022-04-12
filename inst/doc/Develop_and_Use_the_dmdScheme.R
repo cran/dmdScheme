@@ -35,7 +35,7 @@ knitr::opts_chunk$set(
 )
 library(dmdScheme)
 library(here)
-library(kableExtra)
+# library(kableExtra)
 
 ## This is from here https://groups.google.com/forum/#!topic/knitr/WnxJfORwCTk
 

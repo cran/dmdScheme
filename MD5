@@ -1,4 +1,4 @@
-07c6ca7d160c8f6f79db3ca25baeb3ce *DESCRIPTION
+73d510ba4c67de3c2a0e6420130735dc *DESCRIPTION
 0606ea8db0bdf283edd0a391a025d178 *LICENSE
 1f7cfbb16ea855d4f85fee1661ffa006 *NAMESPACE
 3ead9ad792d15de9e1ac84e7488e6cc9 *R/aaa.R
@@ -68,9 +68,9 @@ bd4b3a2058e9fb47f60f5dac2c0e6c69 *R/validation_error_functions.R
 a266f58002f0f9364ba74e6f1ed6eb29 *build/vignette.rds
 6f98ed80c9202555bb27447f299b0c5d *inst/CITATION
 6680830fe797df2ae0e3c0d182cbe261 *inst/aaa.R
-4c88608edae46183ae8c933ba187097b *inst/doc/Develop_and_Use_the_dmdScheme.R
-b0937a3f538868026e6fec3841a28a1e *inst/doc/Develop_and_Use_the_dmdScheme.Rmd
-2d68e9c8f1d3d3954be26bf4464c79d2 *inst/doc/Develop_and_Use_the_dmdScheme.html
+77f52ce70502892188f499459f41a3a6 *inst/doc/Develop_and_Use_the_dmdScheme.R
+6e177129a793a15ba02e38b0eda84129 *inst/doc/Develop_and_Use_the_dmdScheme.Rmd
+427b8dfaaba7440ab317b6d61dab1536 *inst/doc/Develop_and_Use_the_dmdScheme.html
 8aeae9abb10e0e1563c435de1d27c592 *inst/index.md
 232a14443216e4c37dc087f05b982d5b *inst/reports/validation_report.Rmd
 c058f633f3c360f4d6c9f8878b761b47 *inst/shiny_apps/dmd_app/server.R
@@ -153,7 +153,7 @@ bdede2241e292cfc3356bacf53bc64bb *tests/testthat/test-10-excel.R
 0b3de325e13b401cc5a594163a34ef56 *tests/testthat/test-13-upgrade_old_files.R
 34d1aa9b12599000890de0d4dea29d40 *tests/testthat/test-15-lookup_tokens.R
 a542da4ec9fc17cfd5d9919498390a7c *tests/testthat/test-16-make_index.R
-b0937a3f538868026e6fec3841a28a1e *vignettes/Develop_and_Use_the_dmdScheme.Rmd
+6e177129a793a15ba02e38b0eda84129 *vignettes/Develop_and_Use_the_dmdScheme.Rmd
 73ca70eac8abf2fd7e295bf8213ab592 *vignettes/figs/Spreadsheet_01_MdBibliometric.jpg
 41da2cce8c05a2ff9df4702a6261c414 *vignettes/figs/Spreadsheet_01_MdBibliometric.pdf
 93d38fcfe69b4a2363a31096bc129320 *vignettes/figs/Spreadsheet_02_MdAuthor.jpg
