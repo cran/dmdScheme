@@ -12,7 +12,7 @@
 
 <meta name="author" content="Rainer M Krug Rainer.Krug@uzh.ch" />
 
-<meta name="date" content="2022-03-23" />
+<meta name="date" content="2022-04-12" />
 
 <title>Develop and use the dmdScheme</title>
 
@@ -336,7 +336,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <code>dmdScheme</code></h1>
 <h3 class="subtitle">dmdScheme_0.9.9</h3>
 <h4 class="author">Rainer M Krug <a href="mailto:Rainer.Krug@uzh.ch" class="email">Rainer.Krug@uzh.ch</a></h4>
-<h4 class="date">2022-03-23</h4>
+<h4 class="date">2022-04-12</h4>
 
 
 <div id="TOC">
@@ -678,7 +678,7 @@ destfile. The function returns the fully qualified file name to the
 downloaded file invisibly.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_download</span>(<span class="at">name =</span> <span class="st">&quot;emeScheme&quot;</span>, <span class="at">version =</span> <span class="st">&quot;0.9.5&quot;</span>, <span class="at">destfile =</span> <span class="fu">tempfile</span>())</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning in normalizePath(destfile): path[1]=&quot;/var/folders/50/</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; wcr5bjwn75q595n6x82gxj280000gq/T//RtmpO6nnxg/file12ece2e4494c2&quot;: No such file or</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/file724a56a1793c&quot;: No such file or</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; directory</span></span></code></pre></div>
 </div>
 <div id="scheme_install" class="section level3">
@@ -688,7 +688,7 @@ uses <code>scheme_download()</code> to download the scheme definition
 from the default <a href="https://github.com/Exp-Micro-Ecol-Hub/dmdSchemeRepository">github
 repository</a> and installs it. The usage is</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_install</span>(<span class="at">name =</span> <span class="st">&quot;emeScheme&quot;</span>, <span class="at">version =</span> <span class="st">&quot;0.9.5&quot;</span>)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Scheme definition `/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpO6nnxg/file12ece18860131/emeScheme_0.9.5.tar.gz, installed with</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Scheme definition `/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/file724a4707e67e/emeScheme_0.9.5.tar.gz, installed with</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; name:    emeScheme</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; version: 0.9.5</span></span></code></pre></div>
 </div>
@@ -737,21 +737,21 @@ used!</p>
 (<strong>not</strong> the acompanying package!).</li>
 </ol>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_path_index_template</span>()</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpO6nnxg/dmdScheme_12ece5d90b066/installedSchemes/dmdScheme_0.9.9/index.md&quot;</span></span></code></pre></div>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/dmdScheme_724a2af74d57/installedSchemes/dmdScheme_0.9.9/index.md&quot;</span></span></code></pre></div>
 </div>
 <div id="scheme_path_xlsx" class="section level3">
 <h3><code>scheme_path_xlsx()</code></h3>
 <p>Returns the path to the <code>xlsx</code> file included in the scheme
 package.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_path_xlsx</span>()</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpO6nnxg/dmdScheme_12ece5d90b066/installedSchemes/dmdScheme_0.9.9/dmdScheme_0.9.9.xlsx&quot;</span></span></code></pre></div>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/dmdScheme_724a2af74d57/installedSchemes/dmdScheme_0.9.9/dmdScheme_0.9.9.xlsx&quot;</span></span></code></pre></div>
 </div>
 <div id="scheme_path_xml" class="section level3">
 <h3><code>scheme_path_xml()</code></h3>
 <p>Returns the path to the <code>xml</code> file included in the scheme
 package.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_path_xml</span>()</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpO6nnxg/dmdScheme_12ece5d90b066/installedSchemes/dmdScheme_0.9.9/dmdScheme_0.9.9.xml&quot;</span></span></code></pre></div>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/dmdScheme_724a2af74d57/installedSchemes/dmdScheme_0.9.9/dmdScheme_0.9.9.xml&quot;</span></span></code></pre></div>
 </div>
 <div id="scheme_uninstall" class="section level3">
 <h3><code>scheme_uninstall()</code></h3>
@@ -760,7 +760,7 @@ the scheme library, and moved to a temporary flder which wil be deleted
 at the end of the R session.</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scheme_uninstall</span>(<span class="at">name =</span> <span class="st">&quot;emeScheme&quot;</span>, <span class="at">version =</span> <span class="st">&quot;0.9.5&quot;</span>)</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Scheme emeScheme_0.9.5 deleted and moved to</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpO6nnxg/file12ece2d75ef14&quot;</span></span></code></pre></div>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/file724a583cb710&quot;</span></span></code></pre></div>
 </div>
 <div id="scheme_installed" class="section level3">
 <h3><code>scheme_installed()</code></h3>
@@ -1018,7 +1018,7 @@ defined in the <code>xml2</code> package to do further processing:</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>xmlFile <span class="ot">&lt;-</span>  <span class="fu">tempfile</span>(<span class="at">fileext =</span> <span class="st">&quot;.xml&quot;</span>)</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="fu">write_xml</span>( <span class="at">x =</span> x, <span class="at">file =</span> xmlFile )</span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpO6nnxg/file12ece33a584ba.xml&quot;</span></span></code></pre></div>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;/var/folders/50/wcr5bjwn75q595n6x82gxj280000gq/T//RtmpeKsOuL/file724a54013ca6.xml&quot;</span></span></code></pre></div>
 </div>
 <div id="re-import-from-xml-into-r" class="section level2">
 <h2>Re-import from xml into R</h2>

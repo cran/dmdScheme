@@ -1,4 +1,4 @@
-9bb99fe018efc5367bf05a3b3a9ad228 *DESCRIPTION
+07c6ca7d160c8f6f79db3ca25baeb3ce *DESCRIPTION
 0606ea8db0bdf283edd0a391a025d178 *LICENSE
 1f7cfbb16ea855d4f85fee1661ffa006 *NAMESPACE
 3ead9ad792d15de9e1ac84e7488e6cc9 *R/aaa.R
@@ -70,7 +70,7 @@ a266f58002f0f9364ba74e6f1ed6eb29 *build/vignette.rds
 6680830fe797df2ae0e3c0d182cbe261 *inst/aaa.R
 4c88608edae46183ae8c933ba187097b *inst/doc/Develop_and_Use_the_dmdScheme.R
 b0937a3f538868026e6fec3841a28a1e *inst/doc/Develop_and_Use_the_dmdScheme.Rmd
-994b3cf33c8921a74768d9ded07e8ee5 *inst/doc/Develop_and_Use_the_dmdScheme.html
+2d68e9c8f1d3d3954be26bf4464c79d2 *inst/doc/Develop_and_Use_the_dmdScheme.html
 8aeae9abb10e0e1563c435de1d27c592 *inst/index.md
 232a14443216e4c37dc087f05b982d5b *inst/reports/validation_report.Rmd
 c058f633f3c360f4d6c9f8878b761b47 *inst/shiny_apps/dmd_app/server.R
@@ -145,7 +145,7 @@ b0f9036d360e3bfa1bf12e4eafc3486a *tests/testthat/test-02-make_example.R
 f155fc893f168f09cae36ff9a7f43880 *tests/testthat/test-04-as_xml.R
 808b6bac64f6040f0284ec6169e967f2 *tests/testthat/test-05-format_dmdScheme_xlsx.R
 c6434c2cc315328df351b0f58cf963c3 *tests/testthat/test-06-open_new_spreadsheet.R
-7eb0e3377d9a4bab7c5bf05d06089e0a *tests/testthat/test-07-print.dmdScheme.R
+a0dc63ad36739785172ceeae3f51d8e3 *tests/testthat/test-07-print.dmdScheme.R
 e9d8700267701e2213ae90aeb0859bb5 *tests/testthat/test-08-validate.R
 a97d3c7233bc4af32ffff59a71b9b37d *tests/testthat/test-09-print.dmdScheme_validation.R
 bdede2241e292cfc3356bacf53bc64bb *tests/testthat/test-10-excel.R
